@@ -1,8 +1,8 @@
 {
     "queryType": "groupBy",
-    "dataSource": "appevents2",
-    "granularity": "all", 
-    "dimensions": ["appid", "event"],
+    "dataSource": "appevents3",
+    "granularity": "minute", 
+    "dimensions": ["appid", "event", "country"],
     "aggregations":[
         {"type":"count", "name":"eventcount"},
         {"type":"doubleSum", "fieldName":"events", "name":"eventssum"}

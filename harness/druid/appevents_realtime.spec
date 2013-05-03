@@ -1,5 +1,5 @@
 [{
-  "schema" : { "dataSource":"appevents2",
+  "schema" : { "dataSource":"appevents3",
                "aggregators":[ {"type":"count", "name":"events"}
 	       		       ],
                "indexGranularity":"minute"
