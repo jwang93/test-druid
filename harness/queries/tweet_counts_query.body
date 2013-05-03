@@ -1,8 +1,8 @@
 {
     "queryType": "groupBy",
-    "dataSource": "appevents2",
+    "dataSource": "tweets",
     "granularity": "all", 
-    "dimensions": ["appid", "event"],
+    "dimensions": ["text"],
     "aggregations":[
         {"type":"count", "name":"eventcount"},
         {"type":"doubleSum", "fieldName":"events", "name":"eventssum"}
