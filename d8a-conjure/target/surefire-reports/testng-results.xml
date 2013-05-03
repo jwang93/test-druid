@@ -1,0 +1,985 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="96" passed="96">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="527" started-at="2013-03-28T14:02:59Z" finished-at="2013-03-28T14:03:00Z">
+    <groups>
+      <group name="Issues">
+        <method signature="io.d8a.conjure.ConjureTemplateTest.registersEmbeddedNodesWhenParsed()" name="registersEmbeddedNodesWhenParsed" class="io.d8a.conjure.ConjureTemplateTest"/>
+      </group>
+    </groups>
+    <test name="Command line test" duration-ms="527" started-at="2013-03-28T14:02:59Z" finished-at="2013-03-28T14:03:00Z">
+      <class name="io.d8a.conjure.ConjureTemplateParserFixedDataTest">
+        <test-method status="PASS" signature="ignoresBlankLines()" name="ignoresBlankLines" duration-ms="3" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="ignoresHashCommentLines()" name="ignoresHashCommentLines" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="multipleFixedLinesAllCombineEachCall()" name="multipleFixedLinesAllCombineEachCall" duration-ms="1" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="singleFixedLineRepeats()" name="singleFixedLineRepeats" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+      </class>
+      <class name="io.d8a.conjure.ChooseRandomNodeListTest">
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="1" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="canBeReferencedInSampleGenerator()" name="canBeReferencedInSampleGenerator" duration-ms="1" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="canBeRegisteredAsType()" name="canBeRegisteredAsType" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="1" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="generateFailsIfNoNodesAdded()" name="generateFailsIfNoNodesAdded" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Nodes must first be added to ChooseRandomNodeList before calling generate.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Nodes must first be added to ChooseRandomNodeList before calling generate.
+	at io.d8a.conjure.NodeList.generate(NodeList.java:39)
+	at io.d8a.conjure.ChooseRandomNodeListTest.generate(ChooseRandomNodeListTest.java:100)
+	at io.d8a.conjure.ChooseRandomNodeListTest.generateFailsIfNoNodesAdded(ChooseRandomNodeListTest.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:60)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:153)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="eventuallyGeneratesAllNodes()" name="eventuallyGeneratesAllNodes" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="repeatsValuesOverTime()" name="repeatsValuesOverTime" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="generatesNodesFromProvidedList()" name="generatesNodesFromProvidedList" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+      </class>
+      <class name="io.d8a.conjure.ChooseInOrderNodeListTest">
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="1" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="canBeReferencedInSampleGenerator()" name="canBeReferencedInSampleGenerator" duration-ms="1" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="cyclesBackToBeginning()" name="cyclesBackToBeginning" duration-ms="1" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="canBeRegisteredAsType()" name="canBeRegisteredAsType" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="generatesNodesInOrderAdded()" name="generatesNodesInOrderAdded" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="generateFailsIfNoNodesAdded()" name="generateFailsIfNoNodesAdded" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Nodes must first be added to ChooseInOrderNodeList before calling generate.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Nodes must first be added to ChooseInOrderNodeList before calling generate.
+	at io.d8a.conjure.NodeList.generate(NodeList.java:39)
+	at io.d8a.conjure.ChooseInOrderNodeListTest.generate(ChooseInOrderNodeListTest.java:58)
+	at io.d8a.conjure.ChooseInOrderNodeListTest.generateFailsIfNoNodesAdded(ChooseInOrderNodeListTest.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:60)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:153)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+      </class>
+      <class name="io.d8a.conjure.ChooseByWeightNodeListTest">
+        <test-method status="PASS" signature="canBeRegisteredAsType()" name="canBeRegisteredAsType" duration-ms="247" started-at="2013-03-28T14:02:59Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="generatesAllNodesOfSameWeightEventually()" name="generatesAllNodesOfSameWeightEventually" duration-ms="1" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="diesWhenRenderingNoNodes()" name="diesWhenRenderingNoNodes" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Nodes must first be added to ChooseByWeightNodeList before calling generate.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Nodes must first be added to ChooseByWeightNodeList before calling generate.
+	at io.d8a.conjure.NodeList.generate(NodeList.java:39)
+	at io.d8a.conjure.ChooseByWeightNodeListTest.diesWhenRenderingNoNodes(ChooseByWeightNodeListTest.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:60)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:153)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="nodeDistributionReflectsWeights()" name="nodeDistributionReflectsWeights" duration-ms="32" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="generatesLoneNodeRepeatedlyWhenOnlyOneAdded()" name="generatesLoneNodeRepeatedlyWhenOnlyOneAdded" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="generatesHigherWeightedNodesMoreOften()" name="generatesHigherWeightedNodesMoreOften" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="nodesOfDifferentWeightsCanBeAddedInAnyOrder()" name="nodesOfDifferentWeightsCanBeAddedInAnyOrder" duration-ms="12" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="nodesOfSameWeightsCanBeAddedInAnyOrder()" name="nodesOfSameWeightsCanBeAddedInAnyOrder" duration-ms="19" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="weightsCanSumToMoreThan100()" name="weightsCanSumToMoreThan100" duration-ms="5" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+      </class>
+      <class name="io.d8a.conjure.ConjureTemplateParserNodeListParsingTest">
+        <test-method status="PASS" signature="canHaveWhitespaceBetweenCustomEndTokens()" name="canHaveWhitespaceBetweenCustomEndTokens" duration-ms="1" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="canSpecifyCustomDelimiter()" name="canSpecifyCustomDelimiter" duration-ms="1" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="canSpecifyCustomDelimiterAndSeparator()" name="canSpecifyCustomDelimiterAndSeparator" duration-ms="1" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="canSpecifyCustomEndToken()" name="canSpecifyCustomEndToken" duration-ms="1" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="canSpecifyLinesShouldBeTrimmed()" name="canSpecifyLinesShouldBeTrimmed" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="canSpecifyLinesShouldBeTrimmedForCombineNodes()" name="canSpecifyLinesShouldBeTrimmedForCombineNodes" duration-ms="1" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="canSpecifyThePrimarySampleNode()" name="canSpecifyThePrimarySampleNode" duration-ms="1" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="generatesValuesFromEachGroupAndCombinesWithNewlinesForEveryCall()" name="generatesValuesFromEachGroupAndCombinesWithNewlinesForEveryCall" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="parsesNodeListLines()" name="parsesNodeListLines" duration-ms="1" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="stopsParsingNodeListAfterBlankLine()" name="stopsParsingNodeListAfterBlankLine" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+      </class>
+      <class name="io.d8a.conjure.DateNodeTypeTest">
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="1" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="allowsDateJitter()" name="allowsDateJitter" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="allowsFormat()" name="allowsFormat" duration-ms="42" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="allowsNegativeHighJitter()" name="allowsNegativeHighJitter" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="1" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="allowsNegativeLowJitter()" name="allowsNegativeLowJitter" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="allowsTimezone()" name="allowsTimezone" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="canHaveSameJitterLowAndHigh()" name="canHaveSameJitterLowAndHigh" duration-ms="1" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="canReferenceMinMaxForJitter()" name="canReferenceMinMaxForJitter" duration-ms="1" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="1" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="generatesSystemTimestamp()" name="generatesSystemTimestamp" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="fixesTransposedLowHigh()" name="fixesTransposedLowHigh" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="usesClockFromSampleGenerator()" name="usesClockFromSampleGenerator" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+      </class>
+      <class name="io.d8a.conjure.ConjureTemplateTest">
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="1" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="allowsCustomSampleNodes()" name="allowsCustomSampleNodes" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="allowsDirectParseOfNodes()" name="allowsDirectParseOfNodes" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="allowsMultipleTemplateReferences()" name="allowsMultipleTemplateReferences" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="allowsRegisteredNodeTemplateTypes()" name="allowsRegisteredNodeTemplateTypes" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="allowsRegisteringNodeTypesByClassName()" name="allowsRegisteringNodeTypesByClassName" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="allowsTemplatesToReferenceOthers()" name="allowsTemplatesToReferenceOthers" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="customTypesCanBeFullClassNames()" name="customTypesCanBeFullClassNames" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="configRefsCanHaveNamesToo()" name="configRefsCanHaveNamesToo" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="customTypesCanResolveReferences()" name="customTypesCanResolveReferences" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="defaultsToTemplateNamedSample()" name="defaultsToTemplateNamedSample" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="diesWhenAskedForDefaultTemplateIfNotYetAdded()" name="diesWhenAskedForDefaultTemplateIfNotYetAdded" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Node 'sample' not found in the sample generator.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Node 'sample' not found in the sample generator.
+	at io.d8a.conjure.ConjureTemplate.conjure(ConjureTemplate.java:63)
+	at io.d8a.conjure.ConjureTemplate.conjure(ConjureTemplate.java:67)
+	at io.d8a.conjure.ConjureTemplateTest.diesWhenAskedForDefaultTemplateIfNotYetAdded(ConjureTemplateTest.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:60)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:153)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="diesWhenAskedForMissingTemplates()" name="diesWhenAskedForMissingTemplates" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Node 'bad' not found in the sample generator.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Node 'bad' not found in the sample generator.
+	at io.d8a.conjure.ConjureTemplate.conjure(ConjureTemplate.java:63)
+	at io.d8a.conjure.ConjureTemplateTest.diesWhenAskedForMissingTemplates(ConjureTemplateTest.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:60)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:153)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="doesNotCareWhatOrderTemplatesAreAdded()" name="doesNotCareWhatOrderTemplatesAreAdded" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="failsWhenCustomTypeByClassNameNotFound()" name="failsWhenCustomTypeByClassNameNotFound" duration-ms="1" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Unknown sample node nodeCreator 'io.d8a.conjure.FooTestNode'.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Unknown sample node nodeCreator 'io.d8a.conjure.FooTestNode'.
+	at io.d8a.conjure.ConjureTemplate.resolveNodeCreator(ConjureTemplate.java:178)
+	at io.d8a.conjure.ConjureTemplate.resolveNodeFromRef(ConjureTemplate.java:149)
+	at io.d8a.conjure.ConjureTemplate.compileToNodeList(ConjureTemplate.java:123)
+	at io.d8a.conjure.ConjureTemplate.parseNodes(ConjureTemplate.java:48)
+	at io.d8a.conjure.ConjureTemplate.addFragment(ConjureTemplate.java:44)
+	at io.d8a.conjure.ConjureTemplateTest.failsWhenCustomTypeByClassNameNotFound(ConjureTemplateTest.java:146)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:60)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:153)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="1" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="mustSpecifyRefOrType()" name="mustSpecifyRefOrType" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Must specify either 'type' or 'ref'.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Must specify either 'type' or 'ref'.
+	at io.d8a.conjure.ConjureTemplate.resolveNodeFromRef(ConjureTemplate.java:155)
+	at io.d8a.conjure.ConjureTemplate.compileToNodeList(ConjureTemplate.java:123)
+	at io.d8a.conjure.ConjureTemplate.parseNodes(ConjureTemplate.java:48)
+	at io.d8a.conjure.ConjureTemplate.addFragment(ConjureTemplate.java:44)
+	at io.d8a.conjure.ConjureTemplateTest.mustSpecifyRefOrType(ConjureTemplateTest.java:198)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:60)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:153)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="refIgnoredIfTypeDetailsSpecified()" name="refIgnoredIfTypeDetailsSpecified" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="1" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="referencedValuesAreRememberedByDefaultWithinSingleRun()" name="referencedValuesAreRememberedByDefaultWithinSingleRun" duration-ms="2" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="referencedValuesCanBeConfiguredToNotRememberValues()" name="referencedValuesCanBeConfiguredToNotRememberValues" duration-ms="1" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="registersEmbeddedNodesWhenParsed()" name="registersEmbeddedNodesWhenParsed" duration-ms="1" started-at="2013-03-28T14:03:00Z" description="Want to eventually refactor around so the embedded nodes don&#039;t get registered as a side-effect." finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="rejectsDuplicateSampleNames()" name="rejectsDuplicateSampleNames" duration-ms="1" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Node 'sample' already added to this generator.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Node 'sample' already added to this generator.
+	at io.d8a.conjure.ConjureTemplate.addNode(ConjureTemplate.java:78)
+	at io.d8a.conjure.ConjureTemplate.addFragment(ConjureTemplate.java:44)
+	at io.d8a.conjure.ConjureTemplateTest.rejectsDuplicateSampleNames(ConjureTemplateTest.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:60)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:153)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="1" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setsTheFullTemplateToCustomNodeWhenTemplateContainsTheConfigOnly()" name="setsTheFullTemplateToCustomNodeWhenTemplateContainsTheConfigOnly" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="1" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="supportsCustomRefDelimiters()" name="supportsCustomRefDelimiters" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="shouldReturnBareValueForTemplatesWithoutReferences()" name="shouldReturnBareValueForTemplatesWithoutReferences" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="templateReferencesCanBeAtTheEndOfTemplates()" name="templateReferencesCanBeAtTheEndOfTemplates" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="templateReferencesCanBeAtTheBeginningOfTemplates()" name="templateReferencesCanBeAtTheBeginningOfTemplates" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="1" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="templateReferencesCanBeTheWholeTemplate()" name="templateReferencesCanBeTheWholeTemplate" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="templateRefsCanBeLongHand()" name="templateRefsCanBeLongHand" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+      </class>
+      <class name="io.d8a.conjure.ConjureTemplateParserVariablesTest">
+        <test-method status="PASS" signature="canSpecifyCustomClock()" name="canSpecifyCustomClock" duration-ms="60" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="cycleRegisteredByDefault()" name="cycleRegisteredByDefault" duration-ms="1" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="combineRegisteredByDefault()" name="combineRegisteredByDefault" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="linesCanHaveVariablesAndStillCombinesAllEachCall()" name="linesCanHaveVariablesAndStillCombinesAllEachCall" duration-ms="2" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="failsForUnregisteredVariableTypes()" name="failsForUnregisteredVariableTypes" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Unknown sample node nodeCreator 'badname'.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Unknown sample node nodeCreator 'badname'.
+	at io.d8a.conjure.ConjureTemplate.resolveNodeCreator(ConjureTemplate.java:178)
+	at io.d8a.conjure.ConjureTemplate.resolveNodeFromRef(ConjureTemplate.java:149)
+	at io.d8a.conjure.ConjureTemplate.compileToNodeList(ConjureTemplate.java:123)
+	at io.d8a.conjure.ConjureTemplate.parseNodes(ConjureTemplate.java:48)
+	at io.d8a.conjure.ConjureTemplateParser.parse(ConjureTemplateParser.java:63)
+	at io.d8a.conjure.ConjureTemplateParserVariablesTest.failsForUnregisteredVariableTypes(ConjureTemplateParserVariablesTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:60)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:153)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="randomChoiceRegisteredByDefault()" name="randomChoiceRegisteredByDefault" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="minMaxRegisteredByDefault()" name="minMaxRegisteredByDefault" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="timeRegisteredByDefault()" name="timeRegisteredByDefault" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="succeedsForFullyQualifiedTypes()" name="succeedsForFullyQualifiedTypes" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="weightedRegisteredByDefault()" name="weightedRegisteredByDefault" duration-ms="1" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+      </class>
+      <class name="io.d8a.conjure.CombineNodeListTest">
+        <test-method status="PASS" signature="appendsAllNodesInSingleGenerate()" name="appendsAllNodesInSingleGenerate" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="canBeRegisteredAsType()" name="canBeRegisteredAsType" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="canSetSeparatorInConfig()" name="canSetSeparatorInConfig" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="canSpecifySeparator()" name="canSpecifySeparator" duration-ms="1" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+      </class>
+      <class name="io.d8a.conjure.MinMaxNodeTypeTest">
+        <test-method status="PASS" signature="allowsNegativeForMin()" name="allowsNegativeForMin" duration-ms="1" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="allowsNegativeForMax()" name="allowsNegativeForMax" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="canBeCreatedFromFactoryMethod()" name="canBeCreatedFromFactoryMethod" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="1" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="canHaveSameMinAndMax()" name="canHaveSameMinAndMax" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="1" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="createFailsMaxNotSpecified()" name="createFailsMaxNotSpecified" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Both min and max must be specified.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Both min and max must be specified.
+	at io.d8a.conjure.MinMaxNode.createNode(MinMaxNode.java:25)
+	at io.d8a.conjure.MinMaxNodeTypeTest.createFailsMaxNotSpecified(MinMaxNodeTypeTest.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:60)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:153)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="createFailsMinNotSpecified()" name="createFailsMinNotSpecified" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Both min and max must be specified.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Both min and max must be specified.
+	at io.d8a.conjure.MinMaxNode.createNode(MinMaxNode.java:25)
+	at io.d8a.conjure.MinMaxNodeTypeTest.createFailsMinNotSpecified(MinMaxNodeTypeTest.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:60)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:153)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="fixesTransposedMinMax()" name="fixesTransposedMinMax" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="generatesAllValuesInRangeInclusive()" name="generatesAllValuesInRangeInclusive" duration-ms="4" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="generatesNumberBetweenMinMax()" name="generatesNumberBetweenMinMax" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="templatesFailWhenAddedWithoutMax()" name="templatesFailWhenAddedWithoutMax" duration-ms="1" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Problem creating the 'minmax' node.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Problem creating the 'minmax' node.
+	at io.d8a.conjure.ConjureTemplate.createNodeFromMethod(ConjureTemplate.java:193)
+	at io.d8a.conjure.ConjureTemplate.resolveNodeFromRef(ConjureTemplate.java:151)
+	at io.d8a.conjure.ConjureTemplate.compileToNodeList(ConjureTemplate.java:123)
+	at io.d8a.conjure.ConjureTemplate.parseNodes(ConjureTemplate.java:48)
+	at io.d8a.conjure.ConjureTemplate.addFragment(ConjureTemplate.java:44)
+	at io.d8a.conjure.MinMaxNodeTypeTest.templatesFailWhenAddedWithoutMax(MinMaxNodeTypeTest.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:60)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:153)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at io.d8a.conjure.ConjureTemplate.createNodeFromMethod(ConjureTemplate.java:191)
+	... 40 more
+Caused by: java.lang.IllegalArgumentException: Both min and max must be specified.
+	at io.d8a.conjure.MinMaxNode.createNode(MinMaxNode.java:25)
+	... 45 more
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+        <test-method status="PASS" signature="templatesFailWhenAddedWithoutMin()" name="templatesFailWhenAddedWithoutMin" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Problem creating the 'minmax' node.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Problem creating the 'minmax' node.
+	at io.d8a.conjure.ConjureTemplate.createNodeFromMethod(ConjureTemplate.java:193)
+	at io.d8a.conjure.ConjureTemplate.resolveNodeFromRef(ConjureTemplate.java:151)
+	at io.d8a.conjure.ConjureTemplate.compileToNodeList(ConjureTemplate.java:123)
+	at io.d8a.conjure.ConjureTemplate.parseNodes(ConjureTemplate.java:48)
+	at io.d8a.conjure.ConjureTemplate.addFragment(ConjureTemplate.java:44)
+	at io.d8a.conjure.MinMaxNodeTypeTest.templatesFailWhenAddedWithoutMin(MinMaxNodeTypeTest.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:60)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:153)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at io.d8a.conjure.ConjureTemplate.createNodeFromMethod(ConjureTemplate.java:191)
+	... 40 more
+Caused by: java.lang.IllegalArgumentException: Both min and max must be specified.
+	at io.d8a.conjure.MinMaxNode.createNode(MinMaxNode.java:25)
+	... 45 more
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2013-03-28T14:03:00Z" finished-at="2013-03-28T14:03:00Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

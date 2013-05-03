@@ -1,0 +1,465 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Command line test</td><td class="numi">96</td><td class="numi">96</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
+<tr><th colspan="4">Command line test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">io.d8a.conjure.DateNodeTypeTest<td><a href="#m1"><b>allowsTimezone</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.MinMaxNodeTypeTest<td><a href="#m2"><b>canBeCreatedFromFactoryMethod</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="2">io.d8a.conjure.ConjureTemplateParserNodeListParsingTest<td><a href="#m3"><b>generatesValuesFromEachGroupAndCombinesWithNewlinesForEveryCall</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m4"><b>canSpecifyThePrimarySampleNode</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.ChooseByWeightNodeListTest<td><a href="#m5"><b>canBeRegisteredAsType</b>  </a></td><td class="numi">1</td><td class="numi">247</td></tr>
+<tr class="passedodd"><td rowspan="1">io.d8a.conjure.CombineNodeListTest<td><a href="#m6"><b>canSpecifySeparator</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.ConjureTemplateTest<td><a href="#m7"><b>referencedValuesAreRememberedByDefaultWithinSingleRun</b>  </a></td><td class="numi">1</td><td class="numi">2</td></tr>
+<tr class="passedodd"><td rowspan="1">io.d8a.conjure.ConjureTemplateParserNodeListParsingTest<td><a href="#m8"><b>canSpecifyCustomDelimiter</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.ChooseRandomNodeListTest<td><a href="#m9"><b>generateFailsIfNoNodesAdded</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">io.d8a.conjure.ConjureTemplateTest<td><a href="#m10"><b>setsTheFullTemplateToCustomNodeWhenTemplateContainsTheConfigOnly</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.ChooseRandomNodeListTest<td><a href="#m11"><b>repeatsValuesOverTime</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">io.d8a.conjure.MinMaxNodeTypeTest<td><a href="#m12"><b>canHaveSameMinAndMax</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.ConjureTemplateTest<td><a href="#m13"><b>customTypesCanBeFullClassNames</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">io.d8a.conjure.ChooseInOrderNodeListTest<td><a href="#m14"><b>canBeReferencedInSampleGenerator</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.ConjureTemplateParserVariablesTest<td><a href="#m15"><b>canSpecifyCustomClock</b>  </a></td><td class="numi">1</td><td class="numi">60</td></tr>
+<tr class="passedodd"><td rowspan="1">io.d8a.conjure.ConjureTemplateParserFixedDataTest<td><a href="#m16"><b>ignoresBlankLines</b>  </a></td><td class="numi">1</td><td class="numi">3</td></tr>
+<tr class="passedeven"><td rowspan="2">io.d8a.conjure.ChooseByWeightNodeListTest<td><a href="#m17"><b>generatesHigherWeightedNodesMoreOften</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedeven"><td><a href="#m18"><b>generatesAllNodesOfSameWeightEventually</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedodd"><td rowspan="2">io.d8a.conjure.DateNodeTypeTest<td><a href="#m19"><b>canReferenceMinMaxForJitter</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m20"><b>allowsNegativeLowJitter</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.ChooseInOrderNodeListTest<td><a href="#m21"><b>generateFailsIfNoNodesAdded</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">io.d8a.conjure.ChooseRandomNodeListTest<td><a href="#m22"><b>generatesNodesFromProvidedList</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.MinMaxNodeTypeTest<td><a href="#m23"><b>fixesTransposedMinMax</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="2">io.d8a.conjure.ConjureTemplateTest<td><a href="#m24"><b>templateReferencesCanBeTheWholeTemplate</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m25"><b>allowsTemplatesToReferenceOthers</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.DateNodeTypeTest<td><a href="#m26"><b>allowsDateJitter</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">io.d8a.conjure.ConjureTemplateTest<td><a href="#m27"><b>templateReferencesCanBeAtTheEndOfTemplates</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.ConjureTemplateParserFixedDataTest<td><a href="#m28"><b>multipleFixedLinesAllCombineEachCall</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedodd"><td rowspan="1">io.d8a.conjure.ConjureTemplateTest<td><a href="#m29"><b>shouldReturnBareValueForTemplatesWithoutReferences</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.ChooseByWeightNodeListTest<td><a href="#m30"><b>generatesLoneNodeRepeatedlyWhenOnlyOneAdded</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">io.d8a.conjure.DateNodeTypeTest<td><a href="#m31"><b>fixesTransposedLowHigh</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.CombineNodeListTest<td><a href="#m32"><b>appendsAllNodesInSingleGenerate</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="2">io.d8a.conjure.ConjureTemplateTest<td><a href="#m33"><b>failsWhenCustomTypeByClassNameNotFound</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m34"><b>refIgnoredIfTypeDetailsSpecified</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.ConjureTemplateParserFixedDataTest<td><a href="#m35"><b>singleFixedLineRepeats</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">io.d8a.conjure.DateNodeTypeTest<td><a href="#m36"><b>allowsNegativeHighJitter</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.ChooseByWeightNodeListTest<td><a href="#m37"><b>nodesOfDifferentWeightsCanBeAddedInAnyOrder</b>  </a></td><td class="numi">1</td><td class="numi">12</td></tr>
+<tr class="passedodd"><td rowspan="2">io.d8a.conjure.ConjureTemplateTest<td><a href="#m38"><b>supportsCustomRefDelimiters</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m39"><b>configRefsCanHaveNamesToo</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.ChooseByWeightNodeListTest<td><a href="#m40"><b>nodesOfSameWeightsCanBeAddedInAnyOrder</b>  </a></td><td class="numi">1</td><td class="numi">19</td></tr>
+<tr class="passedodd"><td rowspan="1">io.d8a.conjure.ConjureTemplateParserNodeListParsingTest<td><a href="#m41"><b>canSpecifyCustomEndToken</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.MinMaxNodeTypeTest<td><a href="#m42"><b>templatesFailWhenAddedWithoutMax</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedodd"><td rowspan="1">io.d8a.conjure.DateNodeTypeTest<td><a href="#m43"><b>allowsFormat</b>  </a></td><td class="numi">1</td><td class="numi">42</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.ConjureTemplateParserVariablesTest<td><a href="#m44"><b>randomChoiceRegisteredByDefault</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">io.d8a.conjure.ConjureTemplateParserNodeListParsingTest<td><a href="#m45"><b>stopsParsingNodeListAfterBlankLine</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="2">io.d8a.conjure.DateNodeTypeTest<td><a href="#m46"><b>generatesSystemTimestamp</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedeven"><td><a href="#m47"><b>canHaveSameJitterLowAndHigh</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedodd"><td rowspan="1">io.d8a.conjure.ChooseRandomNodeListTest<td><a href="#m48"><b>canBeRegisteredAsType</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.ConjureTemplateTest<td><a href="#m49"><b>allowsRegisteringNodeTypesByClassName</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">io.d8a.conjure.ConjureTemplateParserNodeListParsingTest<td><a href="#m50"><b>canSpecifyCustomDelimiterAndSeparator</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.MinMaxNodeTypeTest<td><a href="#m51"><b>allowsNegativeForMin</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedodd"><td rowspan="1">io.d8a.conjure.ConjureTemplateParserVariablesTest<td><a href="#m52"><b>timeRegisteredByDefault</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.MinMaxNodeTypeTest<td><a href="#m53"><b>createFailsMinNotSpecified</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">io.d8a.conjure.ConjureTemplateParserFixedDataTest<td><a href="#m54"><b>ignoresHashCommentLines</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.ConjureTemplateTest<td><a href="#m55"><b>defaultsToTemplateNamedSample</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">io.d8a.conjure.MinMaxNodeTypeTest<td><a href="#m56"><b>generatesAllValuesInRangeInclusive</b>  </a></td><td class="numi">1</td><td class="numi">4</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.ChooseByWeightNodeListTest<td><a href="#m57"><b>nodeDistributionReflectsWeights</b>  </a></td><td class="numi">1</td><td class="numi">32</td></tr>
+<tr class="passedodd"><td rowspan="1">io.d8a.conjure.MinMaxNodeTypeTest<td><a href="#m58"><b>createFailsMaxNotSpecified</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.DateNodeTypeTest<td><a href="#m59"><b>usesClockFromSampleGenerator</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">io.d8a.conjure.ConjureTemplateTest<td><a href="#m60"><b>allowsMultipleTemplateReferences</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.MinMaxNodeTypeTest<td><a href="#m61"><b>allowsNegativeForMax</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">io.d8a.conjure.ConjureTemplateParserVariablesTest<td><a href="#m62"><b>minMaxRegisteredByDefault</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.ConjureTemplateParserNodeListParsingTest<td><a href="#m63"><b>canSpecifyLinesShouldBeTrimmed</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">io.d8a.conjure.ChooseByWeightNodeListTest<td><a href="#m64"><b>weightsCanSumToMoreThan100</b>  </a></td><td class="numi">1</td><td class="numi">5</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.ConjureTemplateTest<td><a href="#m65"><b>doesNotCareWhatOrderTemplatesAreAdded</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">io.d8a.conjure.ChooseByWeightNodeListTest<td><a href="#m66"><b>diesWhenRenderingNoNodes</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.ChooseRandomNodeListTest<td><a href="#m67"><b>eventuallyGeneratesAllNodes</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="3">io.d8a.conjure.ConjureTemplateTest<td><a href="#m68"><b>templateReferencesCanBeAtTheBeginningOfTemplates</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m69"><b>mustSpecifyRefOrType</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m70"><b>allowsRegisteredNodeTemplateTypes</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.ConjureTemplateParserVariablesTest<td><a href="#m71"><b>succeedsForFullyQualifiedTypes</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">io.d8a.conjure.ConjureTemplateTest<td><a href="#m72"><b>customTypesCanResolveReferences</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.ConjureTemplateParserVariablesTest<td><a href="#m73"><b>linesCanHaveVariablesAndStillCombinesAllEachCall</b>  </a></td><td class="numi">1</td><td class="numi">2</td></tr>
+<tr class="passedodd"><td rowspan="1">io.d8a.conjure.ChooseInOrderNodeListTest<td><a href="#m74"><b>generatesNodesInOrderAdded</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.ConjureTemplateParserVariablesTest<td><a href="#m75"><b>weightedRegisteredByDefault</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedodd"><td rowspan="1">io.d8a.conjure.ChooseInOrderNodeListTest<td><a href="#m76"><b>cyclesBackToBeginning</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedeven"><td rowspan="2">io.d8a.conjure.ConjureTemplateParserNodeListParsingTest<td><a href="#m77"><b>parsesNodeListLines</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m78"><b>canSpecifyLinesShouldBeTrimmedForCombineNodes</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedodd"><td rowspan="1">io.d8a.conjure.ConjureTemplateTest<td><a href="#m79"><b>registersEmbeddedNodesWhenParsed</b> (Issues) ("Want to eventually refactor around so the embedded nodes don't get registered as a side-effect.")</a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.ConjureTemplateParserNodeListParsingTest<td><a href="#m80"><b>canHaveWhitespaceBetweenCustomEndTokens</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedodd"><td rowspan="3">io.d8a.conjure.ConjureTemplateTest<td><a href="#m81"><b>allowsCustomSampleNodes</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m82"><b>templateRefsCanBeLongHand</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m83"><b>allowsDirectParseOfNodes</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.ConjureTemplateParserVariablesTest<td><a href="#m84"><b>failsForUnregisteredVariableTypes</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="2">io.d8a.conjure.ConjureTemplateTest<td><a href="#m85"><b>diesWhenAskedForMissingTemplates</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m86"><b>rejectsDuplicateSampleNames</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.ChooseRandomNodeListTest<td><a href="#m87"><b>canBeReferencedInSampleGenerator</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedodd"><td rowspan="1">io.d8a.conjure.ConjureTemplateParserVariablesTest<td><a href="#m88"><b>combineRegisteredByDefault</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.CombineNodeListTest<td><a href="#m89"><b>canSetSeparatorInConfig</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">io.d8a.conjure.MinMaxNodeTypeTest<td><a href="#m90"><b>templatesFailWhenAddedWithoutMin</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.CombineNodeListTest<td><a href="#m91"><b>canBeRegisteredAsType</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">io.d8a.conjure.ConjureTemplateParserVariablesTest<td><a href="#m92"><b>cycleRegisteredByDefault</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.MinMaxNodeTypeTest<td><a href="#m93"><b>generatesNumberBetweenMinMax</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="2">io.d8a.conjure.ConjureTemplateTest<td><a href="#m94"><b>diesWhenAskedForDefaultTemplateIfNotYetAdded</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m95"><b>referencedValuesCanBeConfiguredToNotRememberValues</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedeven"><td rowspan="1">io.d8a.conjure.ChooseInOrderNodeListTest<td><a href="#m96"><b>canBeRegisteredAsType</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+</table>
+<h1>Command line test</h1>
+<a id="m1"></a><h2>io.d8a.conjure.DateNodeTypeTest:allowsTimezone</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>io.d8a.conjure.MinMaxNodeTypeTest:canBeCreatedFromFactoryMethod</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>io.d8a.conjure.ConjureTemplateParserNodeListParsingTest:generatesValuesFromEachGroupAndCombinesWithNewlinesForEveryCall</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m4"></a><h2>io.d8a.conjure.ConjureTemplateParserNodeListParsingTest:canSpecifyThePrimarySampleNode</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m5"></a><h2>io.d8a.conjure.ChooseByWeightNodeListTest:canBeRegisteredAsType</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m6"></a><h2>io.d8a.conjure.CombineNodeListTest:canSpecifySeparator</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m7"></a><h2>io.d8a.conjure.ConjureTemplateTest:referencedValuesAreRememberedByDefaultWithinSingleRun</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m8"></a><h2>io.d8a.conjure.ConjureTemplateParserNodeListParsingTest:canSpecifyCustomDelimiter</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m9"></a><h2>io.d8a.conjure.ChooseRandomNodeListTest:generateFailsIfNoNodesAdded</h2>
+<div style="padding-left:3em">
+<p>Nodes must first be added to ChooseRandomNodeList before calling generate.</p>
+io.d8a.conjure.NodeList.generate(NodeList.java:39)
+<br/>at io.d8a.conjure.ChooseRandomNodeListTest.generate(ChooseRandomNodeListTest.java:100)
+<br/>at io.d8a.conjure.ChooseRandomNodeListTest.generateFailsIfNoNodesAdded(ChooseRandomNodeListTest.java:87)
+<br/>36 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m10"></a><h2>io.d8a.conjure.ConjureTemplateTest:setsTheFullTemplateToCustomNodeWhenTemplateContainsTheConfigOnly</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m11"></a><h2>io.d8a.conjure.ChooseRandomNodeListTest:repeatsValuesOverTime</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m12"></a><h2>io.d8a.conjure.MinMaxNodeTypeTest:canHaveSameMinAndMax</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m13"></a><h2>io.d8a.conjure.ConjureTemplateTest:customTypesCanBeFullClassNames</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m14"></a><h2>io.d8a.conjure.ChooseInOrderNodeListTest:canBeReferencedInSampleGenerator</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m15"></a><h2>io.d8a.conjure.ConjureTemplateParserVariablesTest:canSpecifyCustomClock</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m16"></a><h2>io.d8a.conjure.ConjureTemplateParserFixedDataTest:ignoresBlankLines</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m17"></a><h2>io.d8a.conjure.ChooseByWeightNodeListTest:generatesHigherWeightedNodesMoreOften</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m18"></a><h2>io.d8a.conjure.ChooseByWeightNodeListTest:generatesAllNodesOfSameWeightEventually</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m19"></a><h2>io.d8a.conjure.DateNodeTypeTest:canReferenceMinMaxForJitter</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m20"></a><h2>io.d8a.conjure.DateNodeTypeTest:allowsNegativeLowJitter</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m21"></a><h2>io.d8a.conjure.ChooseInOrderNodeListTest:generateFailsIfNoNodesAdded</h2>
+<div style="padding-left:3em">
+<p>Nodes must first be added to ChooseInOrderNodeList before calling generate.</p>
+io.d8a.conjure.NodeList.generate(NodeList.java:39)
+<br/>at io.d8a.conjure.ChooseInOrderNodeListTest.generate(ChooseInOrderNodeListTest.java:58)
+<br/>at io.d8a.conjure.ChooseInOrderNodeListTest.generateFailsIfNoNodesAdded(ChooseInOrderNodeListTest.java:41)
+<br/>36 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m22"></a><h2>io.d8a.conjure.ChooseRandomNodeListTest:generatesNodesFromProvidedList</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m23"></a><h2>io.d8a.conjure.MinMaxNodeTypeTest:fixesTransposedMinMax</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m24"></a><h2>io.d8a.conjure.ConjureTemplateTest:templateReferencesCanBeTheWholeTemplate</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m25"></a><h2>io.d8a.conjure.ConjureTemplateTest:allowsTemplatesToReferenceOthers</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m26"></a><h2>io.d8a.conjure.DateNodeTypeTest:allowsDateJitter</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m27"></a><h2>io.d8a.conjure.ConjureTemplateTest:templateReferencesCanBeAtTheEndOfTemplates</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m28"></a><h2>io.d8a.conjure.ConjureTemplateParserFixedDataTest:multipleFixedLinesAllCombineEachCall</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m29"></a><h2>io.d8a.conjure.ConjureTemplateTest:shouldReturnBareValueForTemplatesWithoutReferences</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m30"></a><h2>io.d8a.conjure.ChooseByWeightNodeListTest:generatesLoneNodeRepeatedlyWhenOnlyOneAdded</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m31"></a><h2>io.d8a.conjure.DateNodeTypeTest:fixesTransposedLowHigh</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m32"></a><h2>io.d8a.conjure.CombineNodeListTest:appendsAllNodesInSingleGenerate</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m33"></a><h2>io.d8a.conjure.ConjureTemplateTest:failsWhenCustomTypeByClassNameNotFound</h2>
+<div style="padding-left:3em">
+<p>Unknown sample node nodeCreator &apos;io.d8a.conjure.FooTestNode&apos;.</p>
+io.d8a.conjure.ConjureTemplate.resolveNodeCreator(ConjureTemplate.java:178)
+<br/>at io.d8a.conjure.ConjureTemplate.resolveNodeFromRef(ConjureTemplate.java:149)
+<br/>at io.d8a.conjure.ConjureTemplate.compileToNodeList(ConjureTemplate.java:123)
+<br/>at io.d8a.conjure.ConjureTemplate.parseNodes(ConjureTemplate.java:48)
+<br/>at io.d8a.conjure.ConjureTemplate.addFragment(ConjureTemplate.java:44)
+<br/>at io.d8a.conjure.ConjureTemplateTest.failsWhenCustomTypeByClassNameNotFound(ConjureTemplateTest.java:146)
+<br/>36 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m34"></a><h2>io.d8a.conjure.ConjureTemplateTest:refIgnoredIfTypeDetailsSpecified</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m35"></a><h2>io.d8a.conjure.ConjureTemplateParserFixedDataTest:singleFixedLineRepeats</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m36"></a><h2>io.d8a.conjure.DateNodeTypeTest:allowsNegativeHighJitter</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m37"></a><h2>io.d8a.conjure.ChooseByWeightNodeListTest:nodesOfDifferentWeightsCanBeAddedInAnyOrder</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m38"></a><h2>io.d8a.conjure.ConjureTemplateTest:supportsCustomRefDelimiters</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m39"></a><h2>io.d8a.conjure.ConjureTemplateTest:configRefsCanHaveNamesToo</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m40"></a><h2>io.d8a.conjure.ChooseByWeightNodeListTest:nodesOfSameWeightsCanBeAddedInAnyOrder</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m41"></a><h2>io.d8a.conjure.ConjureTemplateParserNodeListParsingTest:canSpecifyCustomEndToken</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m42"></a><h2>io.d8a.conjure.MinMaxNodeTypeTest:templatesFailWhenAddedWithoutMax</h2>
+<div style="padding-left:3em">
+<p>Problem creating the &apos;minmax&apos; node.</p>
+io.d8a.conjure.ConjureTemplate.createNodeFromMethod(ConjureTemplate.java:193)
+<br/>at io.d8a.conjure.ConjureTemplate.resolveNodeFromRef(ConjureTemplate.java:151)
+<br/>at io.d8a.conjure.ConjureTemplate.compileToNodeList(ConjureTemplate.java:123)
+<br/>at io.d8a.conjure.ConjureTemplate.parseNodes(ConjureTemplate.java:48)
+<br/>at io.d8a.conjure.ConjureTemplate.addFragment(ConjureTemplate.java:44)
+<br/>at io.d8a.conjure.MinMaxNodeTypeTest.templatesFailWhenAddedWithoutMax(MinMaxNodeTypeTest.java:97)
+<br/>36 lines not shown
+<p>Caused by null</p>
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+<br/>at java.lang.reflect.Method.invoke(Method.java:597)
+<br/>at io.d8a.conjure.ConjureTemplate.createNodeFromMethod(ConjureTemplate.java:191)
+<br/>at io.d8a.conjure.ConjureTemplate.resolveNodeFromRef(ConjureTemplate.java:151)
+<br/>at io.d8a.conjure.ConjureTemplate.compileToNodeList(ConjureTemplate.java:123)
+<br/>at io.d8a.conjure.ConjureTemplate.parseNodes(ConjureTemplate.java:48)
+<br/>at io.d8a.conjure.ConjureTemplate.addFragment(ConjureTemplate.java:44)
+<br/>at io.d8a.conjure.MinMaxNodeTypeTest.templatesFailWhenAddedWithoutMax(MinMaxNodeTypeTest.java:97)
+<br/>36 lines not shown
+<p>Caused by Both min and max must be specified.</p>
+io.d8a.conjure.MinMaxNode.createNode(MinMaxNode.java:25)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+<br/>at java.lang.reflect.Method.invoke(Method.java:597)
+<br/>at io.d8a.conjure.ConjureTemplate.createNodeFromMethod(ConjureTemplate.java:191)
+<br/>at io.d8a.conjure.ConjureTemplate.resolveNodeFromRef(ConjureTemplate.java:151)
+<br/>at io.d8a.conjure.ConjureTemplate.compileToNodeList(ConjureTemplate.java:123)
+<br/>at io.d8a.conjure.ConjureTemplate.parseNodes(ConjureTemplate.java:48)
+<br/>at io.d8a.conjure.ConjureTemplate.addFragment(ConjureTemplate.java:44)
+<br/>at io.d8a.conjure.MinMaxNodeTypeTest.templatesFailWhenAddedWithoutMax(MinMaxNodeTypeTest.java:97)
+<br/>36 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m43"></a><h2>io.d8a.conjure.DateNodeTypeTest:allowsFormat</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m44"></a><h2>io.d8a.conjure.ConjureTemplateParserVariablesTest:randomChoiceRegisteredByDefault</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m45"></a><h2>io.d8a.conjure.ConjureTemplateParserNodeListParsingTest:stopsParsingNodeListAfterBlankLine</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m46"></a><h2>io.d8a.conjure.DateNodeTypeTest:generatesSystemTimestamp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m47"></a><h2>io.d8a.conjure.DateNodeTypeTest:canHaveSameJitterLowAndHigh</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m48"></a><h2>io.d8a.conjure.ChooseRandomNodeListTest:canBeRegisteredAsType</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m49"></a><h2>io.d8a.conjure.ConjureTemplateTest:allowsRegisteringNodeTypesByClassName</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m50"></a><h2>io.d8a.conjure.ConjureTemplateParserNodeListParsingTest:canSpecifyCustomDelimiterAndSeparator</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m51"></a><h2>io.d8a.conjure.MinMaxNodeTypeTest:allowsNegativeForMin</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m52"></a><h2>io.d8a.conjure.ConjureTemplateParserVariablesTest:timeRegisteredByDefault</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m53"></a><h2>io.d8a.conjure.MinMaxNodeTypeTest:createFailsMinNotSpecified</h2>
+<div style="padding-left:3em">
+<p>Both min and max must be specified.</p>
+io.d8a.conjure.MinMaxNode.createNode(MinMaxNode.java:25)
+<br/>at io.d8a.conjure.MinMaxNodeTypeTest.createFailsMinNotSpecified(MinMaxNodeTypeTest.java:92)
+<br/>36 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m54"></a><h2>io.d8a.conjure.ConjureTemplateParserFixedDataTest:ignoresHashCommentLines</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m55"></a><h2>io.d8a.conjure.ConjureTemplateTest:defaultsToTemplateNamedSample</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m56"></a><h2>io.d8a.conjure.MinMaxNodeTypeTest:generatesAllValuesInRangeInclusive</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m57"></a><h2>io.d8a.conjure.ChooseByWeightNodeListTest:nodeDistributionReflectsWeights</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m58"></a><h2>io.d8a.conjure.MinMaxNodeTypeTest:createFailsMaxNotSpecified</h2>
+<div style="padding-left:3em">
+<p>Both min and max must be specified.</p>
+io.d8a.conjure.MinMaxNode.createNode(MinMaxNode.java:25)
+<br/>at io.d8a.conjure.MinMaxNodeTypeTest.createFailsMaxNotSpecified(MinMaxNodeTypeTest.java:104)
+<br/>36 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m59"></a><h2>io.d8a.conjure.DateNodeTypeTest:usesClockFromSampleGenerator</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m60"></a><h2>io.d8a.conjure.ConjureTemplateTest:allowsMultipleTemplateReferences</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m61"></a><h2>io.d8a.conjure.MinMaxNodeTypeTest:allowsNegativeForMax</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m62"></a><h2>io.d8a.conjure.ConjureTemplateParserVariablesTest:minMaxRegisteredByDefault</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m63"></a><h2>io.d8a.conjure.ConjureTemplateParserNodeListParsingTest:canSpecifyLinesShouldBeTrimmed</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m64"></a><h2>io.d8a.conjure.ChooseByWeightNodeListTest:weightsCanSumToMoreThan100</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m65"></a><h2>io.d8a.conjure.ConjureTemplateTest:doesNotCareWhatOrderTemplatesAreAdded</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m66"></a><h2>io.d8a.conjure.ChooseByWeightNodeListTest:diesWhenRenderingNoNodes</h2>
+<div style="padding-left:3em">
+<p>Nodes must first be added to ChooseByWeightNodeList before calling generate.</p>
+io.d8a.conjure.NodeList.generate(NodeList.java:39)
+<br/>at io.d8a.conjure.ChooseByWeightNodeListTest.diesWhenRenderingNoNodes(ChooseByWeightNodeListTest.java:15)
+<br/>36 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m67"></a><h2>io.d8a.conjure.ChooseRandomNodeListTest:eventuallyGeneratesAllNodes</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m68"></a><h2>io.d8a.conjure.ConjureTemplateTest:templateReferencesCanBeAtTheBeginningOfTemplates</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m69"></a><h2>io.d8a.conjure.ConjureTemplateTest:mustSpecifyRefOrType</h2>
+<div style="padding-left:3em">
+<p>Must specify either &apos;type&apos; or &apos;ref&apos;.</p>
+io.d8a.conjure.ConjureTemplate.resolveNodeFromRef(ConjureTemplate.java:155)
+<br/>at io.d8a.conjure.ConjureTemplate.compileToNodeList(ConjureTemplate.java:123)
+<br/>at io.d8a.conjure.ConjureTemplate.parseNodes(ConjureTemplate.java:48)
+<br/>at io.d8a.conjure.ConjureTemplate.addFragment(ConjureTemplate.java:44)
+<br/>at io.d8a.conjure.ConjureTemplateTest.mustSpecifyRefOrType(ConjureTemplateTest.java:198)
+<br/>36 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m70"></a><h2>io.d8a.conjure.ConjureTemplateTest:allowsRegisteredNodeTemplateTypes</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m71"></a><h2>io.d8a.conjure.ConjureTemplateParserVariablesTest:succeedsForFullyQualifiedTypes</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m72"></a><h2>io.d8a.conjure.ConjureTemplateTest:customTypesCanResolveReferences</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m73"></a><h2>io.d8a.conjure.ConjureTemplateParserVariablesTest:linesCanHaveVariablesAndStillCombinesAllEachCall</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m74"></a><h2>io.d8a.conjure.ChooseInOrderNodeListTest:generatesNodesInOrderAdded</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m75"></a><h2>io.d8a.conjure.ConjureTemplateParserVariablesTest:weightedRegisteredByDefault</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m76"></a><h2>io.d8a.conjure.ChooseInOrderNodeListTest:cyclesBackToBeginning</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m77"></a><h2>io.d8a.conjure.ConjureTemplateParserNodeListParsingTest:parsesNodeListLines</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m78"></a><h2>io.d8a.conjure.ConjureTemplateParserNodeListParsingTest:canSpecifyLinesShouldBeTrimmedForCombineNodes</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m79"></a><h2>io.d8a.conjure.ConjureTemplateTest:registersEmbeddedNodesWhenParsed</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m80"></a><h2>io.d8a.conjure.ConjureTemplateParserNodeListParsingTest:canHaveWhitespaceBetweenCustomEndTokens</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m81"></a><h2>io.d8a.conjure.ConjureTemplateTest:allowsCustomSampleNodes</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m82"></a><h2>io.d8a.conjure.ConjureTemplateTest:templateRefsCanBeLongHand</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m83"></a><h2>io.d8a.conjure.ConjureTemplateTest:allowsDirectParseOfNodes</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m84"></a><h2>io.d8a.conjure.ConjureTemplateParserVariablesTest:failsForUnregisteredVariableTypes</h2>
+<div style="padding-left:3em">
+<p>Unknown sample node nodeCreator &apos;badname&apos;.</p>
+io.d8a.conjure.ConjureTemplate.resolveNodeCreator(ConjureTemplate.java:178)
+<br/>at io.d8a.conjure.ConjureTemplate.resolveNodeFromRef(ConjureTemplate.java:149)
+<br/>at io.d8a.conjure.ConjureTemplate.compileToNodeList(ConjureTemplate.java:123)
+<br/>at io.d8a.conjure.ConjureTemplate.parseNodes(ConjureTemplate.java:48)
+<br/>at io.d8a.conjure.ConjureTemplateParser.parse(ConjureTemplateParser.java:63)
+<br/>at io.d8a.conjure.ConjureTemplateParserVariablesTest.failsForUnregisteredVariableTypes(ConjureTemplateParserVariablesTest.java:29)
+<br/>36 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m85"></a><h2>io.d8a.conjure.ConjureTemplateTest:diesWhenAskedForMissingTemplates</h2>
+<div style="padding-left:3em">
+<p>Node &apos;bad&apos; not found in the sample generator.</p>
+io.d8a.conjure.ConjureTemplate.conjure(ConjureTemplate.java:63)
+<br/>at io.d8a.conjure.ConjureTemplateTest.diesWhenAskedForMissingTemplates(ConjureTemplateTest.java:36)
+<br/>36 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m86"></a><h2>io.d8a.conjure.ConjureTemplateTest:rejectsDuplicateSampleNames</h2>
+<div style="padding-left:3em">
+<p>Node &apos;sample&apos; already added to this generator.</p>
+io.d8a.conjure.ConjureTemplate.addNode(ConjureTemplate.java:78)
+<br/>at io.d8a.conjure.ConjureTemplate.addFragment(ConjureTemplate.java:44)
+<br/>at io.d8a.conjure.ConjureTemplateTest.rejectsDuplicateSampleNames(ConjureTemplateTest.java:99)
+<br/>36 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m87"></a><h2>io.d8a.conjure.ChooseRandomNodeListTest:canBeReferencedInSampleGenerator</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m88"></a><h2>io.d8a.conjure.ConjureTemplateParserVariablesTest:combineRegisteredByDefault</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m89"></a><h2>io.d8a.conjure.CombineNodeListTest:canSetSeparatorInConfig</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m90"></a><h2>io.d8a.conjure.MinMaxNodeTypeTest:templatesFailWhenAddedWithoutMin</h2>
+<div style="padding-left:3em">
+<p>Problem creating the &apos;minmax&apos; node.</p>
+io.d8a.conjure.ConjureTemplate.createNodeFromMethod(ConjureTemplate.java:193)
+<br/>at io.d8a.conjure.ConjureTemplate.resolveNodeFromRef(ConjureTemplate.java:151)
+<br/>at io.d8a.conjure.ConjureTemplate.compileToNodeList(ConjureTemplate.java:123)
+<br/>at io.d8a.conjure.ConjureTemplate.parseNodes(ConjureTemplate.java:48)
+<br/>at io.d8a.conjure.ConjureTemplate.addFragment(ConjureTemplate.java:44)
+<br/>at io.d8a.conjure.MinMaxNodeTypeTest.templatesFailWhenAddedWithoutMin(MinMaxNodeTypeTest.java:85)
+<br/>36 lines not shown
+<p>Caused by null</p>
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+<br/>at java.lang.reflect.Method.invoke(Method.java:597)
+<br/>at io.d8a.conjure.ConjureTemplate.createNodeFromMethod(ConjureTemplate.java:191)
+<br/>at io.d8a.conjure.ConjureTemplate.resolveNodeFromRef(ConjureTemplate.java:151)
+<br/>at io.d8a.conjure.ConjureTemplate.compileToNodeList(ConjureTemplate.java:123)
+<br/>at io.d8a.conjure.ConjureTemplate.parseNodes(ConjureTemplate.java:48)
+<br/>at io.d8a.conjure.ConjureTemplate.addFragment(ConjureTemplate.java:44)
+<br/>at io.d8a.conjure.MinMaxNodeTypeTest.templatesFailWhenAddedWithoutMin(MinMaxNodeTypeTest.java:85)
+<br/>36 lines not shown
+<p>Caused by Both min and max must be specified.</p>
+io.d8a.conjure.MinMaxNode.createNode(MinMaxNode.java:25)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+<br/>at java.lang.reflect.Method.invoke(Method.java:597)
+<br/>at io.d8a.conjure.ConjureTemplate.createNodeFromMethod(ConjureTemplate.java:191)
+<br/>at io.d8a.conjure.ConjureTemplate.resolveNodeFromRef(ConjureTemplate.java:151)
+<br/>at io.d8a.conjure.ConjureTemplate.compileToNodeList(ConjureTemplate.java:123)
+<br/>at io.d8a.conjure.ConjureTemplate.parseNodes(ConjureTemplate.java:48)
+<br/>at io.d8a.conjure.ConjureTemplate.addFragment(ConjureTemplate.java:44)
+<br/>at io.d8a.conjure.MinMaxNodeTypeTest.templatesFailWhenAddedWithoutMin(MinMaxNodeTypeTest.java:85)
+<br/>36 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m91"></a><h2>io.d8a.conjure.CombineNodeListTest:canBeRegisteredAsType</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m92"></a><h2>io.d8a.conjure.ConjureTemplateParserVariablesTest:cycleRegisteredByDefault</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m93"></a><h2>io.d8a.conjure.MinMaxNodeTypeTest:generatesNumberBetweenMinMax</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m94"></a><h2>io.d8a.conjure.ConjureTemplateTest:diesWhenAskedForDefaultTemplateIfNotYetAdded</h2>
+<div style="padding-left:3em">
+<p>Node &apos;sample&apos; not found in the sample generator.</p>
+io.d8a.conjure.ConjureTemplate.conjure(ConjureTemplate.java:63)
+<br/>at io.d8a.conjure.ConjureTemplate.conjure(ConjureTemplate.java:67)
+<br/>at io.d8a.conjure.ConjureTemplateTest.diesWhenAskedForDefaultTemplateIfNotYetAdded(ConjureTemplateTest.java:49)
+<br/>36 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m95"></a><h2>io.d8a.conjure.ConjureTemplateTest:referencedValuesCanBeConfiguredToNotRememberValues</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m96"></a><h2>io.d8a.conjure.ChooseInOrderNodeListTest:canBeRegisteredAsType</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

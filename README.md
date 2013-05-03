@@ -1,4 +1,4 @@
-##Welcome to test_druid!##
+##Welcome to test-druid!##
 
 ##### Thank you to the following people for helping with this project
 

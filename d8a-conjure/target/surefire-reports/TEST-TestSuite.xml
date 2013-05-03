@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="1.237" errors="0" skipped="0" tests="96" name="TestSuite">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries"/>
+    <property name="java.vm.version" value="20.14-b01-447"/>
+    <property name="awt.nativeDoubleBuffering" value="true"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="mrj.build" value="11M4203"/>
+    <property name="java.vm.vendor" value="Apple Inc."/>
+    <property name="java.vendor.url" value="http://www.apple.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/jaywang/Desktop/Systems/d8a-conjure"/>
+    <property name="java.runtime.version" value="1.6.0_43-b01-447-11M4203"/>
+    <property name="java.awt.graphicsenv" value="apple.awt.CGraphicsEnvironment"/>
+    <property name="basedir" value="/Users/jaywang/Desktop/Systems/d8a-conjure"/>
+    <property name="java.endorsed.dirs" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="surefire.real.class.path" value="/Users/jaywang/Desktop/Systems/d8a-conjure/target/surefire/surefirebooter5056314602856927185.jar"/>
+    <property name="java.io.tmpdir" value="/var/folders/vn/66fny8zd71gfb023jkcsj2kh0000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="sun.jnu.encoding" value="MacRoman"/>
+    <property name="java.library.path" value=".:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="surefire.test.class.path" value="/Users/jaywang/Desktop/Systems/d8a-conjure/target/test-classes:/Users/jaywang/Desktop/Systems/d8a-conjure/target/classes:/Users/jaywang/.m2/repository/kafka/core-kafka/0.6-mmx11/core-kafka-0.6-mmx11.jar:/Users/jaywang/.m2/repository/net/sf/jopt-simple/jopt-simple/3.2/jopt-simple-3.2.jar:/Users/jaywang/.m2/repository/commons-cli/commons-cli/1.2/commons-cli-1.2.jar:/Users/jaywang/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.1.1/jackson-databind-2.1.1.jar:/Users/jaywang/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.1.1/jackson-annotations-2.1.1.jar:/Users/jaywang/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.1/jackson-core-2.1.1.jar:/Users/jaywang/.m2/repository/org/scala-lang/scala-library/2.8.0/scala-library-2.8.0.jar:/Users/jaywang/.m2/repository/log4j/log4j/1.2.16/log4j-1.2.16.jar:/Users/jaywang/.m2/repository/com/github/sgroschupf/zkclient/0.1/zkclient-0.1.jar:/Users/jaywang/.m2/repository/org/apache/zookeeper/zookeeper/3.3.3/zookeeper-3.3.3.jar:/Users/jaywang/.m2/repository/jline/jline/0.9.94/jline-0.9.94.jar:/Users/jaywang/.m2/repository/org/testng/testng/6.1.1/testng-6.1.1.jar:/Users/jaywang/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/Users/jaywang/.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar:/Users/jaywang/.m2/repository/com/beust/jcommander/1.12/jcommander-1.12.jar:/Users/jaywang/.m2/repository/org/yaml/snakeyaml/1.6/snakeyaml-1.6.jar:/Users/jaywang/.m2/repository/joda-time/joda-time/2.1/joda-time-2.1.jar:"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="50.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.7.5"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/jaywang"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="apple.awt.CPrinterJob"/>
+    <property name="java.specification.version" value="1.6"/>
+    <property name="file.encoding" value="MacRoman"/>
+    <property name="user.name" value="jaywang"/>
+    <property name="java.class.path" value="/Users/jaywang/Desktop/Systems/d8a-conjure/target/test-classes:/Users/jaywang/Desktop/Systems/d8a-conjure/target/classes:/Users/jaywang/.m2/repository/kafka/core-kafka/0.6-mmx11/core-kafka-0.6-mmx11.jar:/Users/jaywang/.m2/repository/net/sf/jopt-simple/jopt-simple/3.2/jopt-simple-3.2.jar:/Users/jaywang/.m2/repository/commons-cli/commons-cli/1.2/commons-cli-1.2.jar:/Users/jaywang/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.1.1/jackson-databind-2.1.1.jar:/Users/jaywang/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.1.1/jackson-annotations-2.1.1.jar:/Users/jaywang/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.1/jackson-core-2.1.1.jar:/Users/jaywang/.m2/repository/org/scala-lang/scala-library/2.8.0/scala-library-2.8.0.jar:/Users/jaywang/.m2/repository/log4j/log4j/1.2.16/log4j-1.2.16.jar:/Users/jaywang/.m2/repository/com/github/sgroschupf/zkclient/0.1/zkclient-0.1.jar:/Users/jaywang/.m2/repository/org/apache/zookeeper/zookeeper/3.3.3/zookeeper-3.3.3.jar:/Users/jaywang/.m2/repository/jline/jline/0.9.94/jline-0.9.94.jar:/Users/jaywang/.m2/repository/org/testng/testng/6.1.1/testng-6.1.1.jar:/Users/jaywang/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/Users/jaywang/.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar:/Users/jaywang/.m2/repository/com/beust/jcommander/1.12/jcommander-1.12.jar:/Users/jaywang/.m2/repository/org/yaml/snakeyaml/1.6/snakeyaml-1.6.jar:/Users/jaywang/.m2/repository/joda-time/joda-time/2.1/joda-time-2.1.jar:"/>
+    <property name="java.vm.specification.version" value="1.0"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home"/>
+    <property name="sun.java.command" value="/Users/jaywang/Desktop/Systems/d8a-conjure/target/surefire/surefirebooter5056314602856927185.jar /Users/jaywang/Desktop/Systems/d8a-conjure/target/surefire/surefire5264966514168800258tmp /Users/jaywang/Desktop/Systems/d8a-conjure/target/surefire/surefire2990258292611247131tmp"/>
+    <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="apple.awt.CToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.6.0_43"/>
+    <property name="java.ext.dirs" value="/Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext"/>
+    <property name="sun.boot.class.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Resources/Java/JavaRuntimeSupport.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar"/>
+    <property name="java.vendor" value="Apple Inc."/>
+    <property name="localRepository" value="/Users/jaywang/.m2/repository"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.apple.com/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="mrj.version" value="1070.1.6.0_43-447"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase time="0.245" classname="io.d8a.conjure.ChooseByWeightNodeListTest" name="canBeRegisteredAsType"/>
+  <testcase time="0" classname="io.d8a.conjure.ChooseByWeightNodeListTest" name="diesWhenRenderingNoNodes"/>
+  <testcase time="0.001" classname="io.d8a.conjure.ChooseByWeightNodeListTest" name="generatesAllNodesOfSameWeightEventually"/>
+  <testcase time="0" classname="io.d8a.conjure.ChooseByWeightNodeListTest" name="generatesHigherWeightedNodesMoreOften"/>
+  <testcase time="0" classname="io.d8a.conjure.ChooseByWeightNodeListTest" name="generatesLoneNodeRepeatedlyWhenOnlyOneAdded"/>
+  <testcase time="0.032" classname="io.d8a.conjure.ChooseByWeightNodeListTest" name="nodeDistributionReflectsWeights"/>
+  <testcase time="0.012" classname="io.d8a.conjure.ChooseByWeightNodeListTest" name="nodesOfDifferentWeightsCanBeAddedInAnyOrder"/>
+  <testcase time="0.019" classname="io.d8a.conjure.ChooseByWeightNodeListTest" name="nodesOfSameWeightsCanBeAddedInAnyOrder"/>
+  <testcase time="0.005" classname="io.d8a.conjure.ChooseByWeightNodeListTest" name="weightsCanSumToMoreThan100"/>
+  <testcase time="0.001" classname="io.d8a.conjure.ChooseInOrderNodeListTest" name="canBeReferencedInSampleGenerator"/>
+  <testcase time="0" classname="io.d8a.conjure.ChooseInOrderNodeListTest" name="canBeRegisteredAsType"/>
+  <testcase time="0.001" classname="io.d8a.conjure.ChooseInOrderNodeListTest" name="cyclesBackToBeginning"/>
+  <testcase time="0" classname="io.d8a.conjure.ChooseInOrderNodeListTest" name="generateFailsIfNoNodesAdded"/>
+  <testcase time="0" classname="io.d8a.conjure.ChooseInOrderNodeListTest" name="generatesNodesInOrderAdded"/>
+  <testcase time="0.001" classname="io.d8a.conjure.ChooseRandomNodeListTest" name="canBeReferencedInSampleGenerator"/>
+  <testcase time="0" classname="io.d8a.conjure.ChooseRandomNodeListTest" name="canBeRegisteredAsType"/>
+  <testcase time="0" classname="io.d8a.conjure.ChooseRandomNodeListTest" name="eventuallyGeneratesAllNodes"/>
+  <testcase time="0.001" classname="io.d8a.conjure.ChooseRandomNodeListTest" name="generateFailsIfNoNodesAdded"/>
+  <testcase time="0" classname="io.d8a.conjure.ChooseRandomNodeListTest" name="generatesNodesFromProvidedList"/>
+  <testcase time="0" classname="io.d8a.conjure.ChooseRandomNodeListTest" name="repeatsValuesOverTime"/>
+  <testcase time="0" classname="io.d8a.conjure.CombineNodeListTest" name="appendsAllNodesInSingleGenerate"/>
+  <testcase time="0" classname="io.d8a.conjure.CombineNodeListTest" name="canBeRegisteredAsType"/>
+  <testcase time="0" classname="io.d8a.conjure.CombineNodeListTest" name="canSetSeparatorInConfig"/>
+  <testcase time="0.001" classname="io.d8a.conjure.CombineNodeListTest" name="canSpecifySeparator"/>
+  <testcase time="0.003" classname="io.d8a.conjure.ConjureTemplateParserFixedDataTest" name="ignoresBlankLines"/>
+  <testcase time="0" classname="io.d8a.conjure.ConjureTemplateParserFixedDataTest" name="ignoresHashCommentLines"/>
+  <testcase time="0" classname="io.d8a.conjure.ConjureTemplateParserFixedDataTest" name="multipleFixedLinesAllCombineEachCall"/>
+  <testcase time="0" classname="io.d8a.conjure.ConjureTemplateParserFixedDataTest" name="singleFixedLineRepeats"/>
+  <testcase time="0.001" classname="io.d8a.conjure.ConjureTemplateParserNodeListParsingTest" name="canHaveWhitespaceBetweenCustomEndTokens"/>
+  <testcase time="0.001" classname="io.d8a.conjure.ConjureTemplateParserNodeListParsingTest" name="canSpecifyCustomDelimiter"/>
+  <testcase time="0.001" classname="io.d8a.conjure.ConjureTemplateParserNodeListParsingTest" name="canSpecifyCustomDelimiterAndSeparator"/>
+  <testcase time="0.001" classname="io.d8a.conjure.ConjureTemplateParserNodeListParsingTest" name="canSpecifyCustomEndToken"/>
+  <testcase time="0" classname="io.d8a.conjure.ConjureTemplateParserNodeListParsingTest" name="canSpecifyLinesShouldBeTrimmed"/>
+  <testcase time="0.001" classname="io.d8a.conjure.ConjureTemplateParserNodeListParsingTest" name="canSpecifyLinesShouldBeTrimmedForCombineNodes"/>
+  <testcase time="0.001" classname="io.d8a.conjure.ConjureTemplateParserNodeListParsingTest" name="canSpecifyThePrimarySampleNode"/>
+  <testcase time="0" classname="io.d8a.conjure.ConjureTemplateParserNodeListParsingTest" name="generatesValuesFromEachGroupAndCombinesWithNewlinesForEveryCall"/>
+  <testcase time="0" classname="io.d8a.conjure.ConjureTemplateParserNodeListParsingTest" name="parsesNodeListLines"/>
+  <testcase time="0" classname="io.d8a.conjure.ConjureTemplateParserNodeListParsingTest" name="stopsParsingNodeListAfterBlankLine"/>
+  <testcase time="0.06" classname="io.d8a.conjure.ConjureTemplateParserVariablesTest" name="canSpecifyCustomClock"/>
+  <testcase time="0" classname="io.d8a.conjure.ConjureTemplateParserVariablesTest" name="combineRegisteredByDefault"/>
+  <testcase time="0.001" classname="io.d8a.conjure.ConjureTemplateParserVariablesTest" name="cycleRegisteredByDefault"/>
+  <testcase time="0" classname="io.d8a.conjure.ConjureTemplateParserVariablesTest" name="failsForUnregisteredVariableTypes"/>
+  <testcase time="0.002" classname="io.d8a.conjure.ConjureTemplateParserVariablesTest" name="linesCanHaveVariablesAndStillCombinesAllEachCall"/>
+  <testcase time="0" classname="io.d8a.conjure.ConjureTemplateParserVariablesTest" name="minMaxRegisteredByDefault"/>
+  <testcase time="0" classname="io.d8a.conjure.ConjureTemplateParserVariablesTest" name="randomChoiceRegisteredByDefault"/>
+  <testcase time="0" classname="io.d8a.conjure.ConjureTemplateParserVariablesTest" name="succeedsForFullyQualifiedTypes"/>
+  <testcase time="0" classname="io.d8a.conjure.ConjureTemplateParserVariablesTest" name="timeRegisteredByDefault"/>
+  <testcase time="0.001" classname="io.d8a.conjure.ConjureTemplateParserVariablesTest" name="weightedRegisteredByDefault"/>
+  <testcase time="0" classname="io.d8a.conjure.ConjureTemplateTest" name="allowsCustomSampleNodes"/>
+  <testcase time="0" classname="io.d8a.conjure.ConjureTemplateTest" name="allowsDirectParseOfNodes"/>
+  <testcase time="0" classname="io.d8a.conjure.ConjureTemplateTest" name="allowsMultipleTemplateReferences"/>
+  <testcase time="0" classname="io.d8a.conjure.ConjureTemplateTest" name="allowsRegisteredNodeTemplateTypes"/>
+  <testcase time="0" classname="io.d8a.conjure.ConjureTemplateTest" name="allowsRegisteringNodeTypesByClassName"/>
+  <testcase time="0" classname="io.d8a.conjure.ConjureTemplateTest" name="allowsTemplatesToReferenceOthers"/>
+  <testcase time="0" classname="io.d8a.conjure.ConjureTemplateTest" name="configRefsCanHaveNamesToo"/>
+  <testcase time="0" classname="io.d8a.conjure.ConjureTemplateTest" name="customTypesCanBeFullClassNames"/>
+  <testcase time="0" classname="io.d8a.conjure.ConjureTemplateTest" name="customTypesCanResolveReferences"/>
+  <testcase time="0.001" classname="io.d8a.conjure.ConjureTemplateTest" name="defaultsToTemplateNamedSample"/>
+  <testcase time="0" classname="io.d8a.conjure.ConjureTemplateTest" name="diesWhenAskedForDefaultTemplateIfNotYetAdded"/>
+  <testcase time="0" classname="io.d8a.conjure.ConjureTemplateTest" name="diesWhenAskedForMissingTemplates"/>
+  <testcase time="0" classname="io.d8a.conjure.ConjureTemplateTest" name="doesNotCareWhatOrderTemplatesAreAdded"/>
+  <testcase time="0.001" classname="io.d8a.conjure.ConjureTemplateTest" name="failsWhenCustomTypeByClassNameNotFound"/>
+  <testcase time="0" classname="io.d8a.conjure.ConjureTemplateTest" name="mustSpecifyRefOrType"/>
+  <testcase time="0" classname="io.d8a.conjure.ConjureTemplateTest" name="refIgnoredIfTypeDetailsSpecified"/>
+  <testcase time="0.002" classname="io.d8a.conjure.ConjureTemplateTest" name="referencedValuesAreRememberedByDefaultWithinSingleRun"/>
+  <testcase time="0.001" classname="io.d8a.conjure.ConjureTemplateTest" name="referencedValuesCanBeConfiguredToNotRememberValues"/>
+  <testcase time="0.001" classname="io.d8a.conjure.ConjureTemplateTest" name="registersEmbeddedNodesWhenParsed"/>
+  <testcase time="0" classname="io.d8a.conjure.ConjureTemplateTest" name="rejectsDuplicateSampleNames"/>
+  <testcase time="0" classname="io.d8a.conjure.ConjureTemplateTest" name="setsTheFullTemplateToCustomNodeWhenTemplateContainsTheConfigOnly"/>
+  <testcase time="0" classname="io.d8a.conjure.ConjureTemplateTest" name="shouldReturnBareValueForTemplatesWithoutReferences"/>
+  <testcase time="0" classname="io.d8a.conjure.ConjureTemplateTest" name="supportsCustomRefDelimiters"/>
+  <testcase time="0" classname="io.d8a.conjure.ConjureTemplateTest" name="templateReferencesCanBeAtTheBeginningOfTemplates"/>
+  <testcase time="0" classname="io.d8a.conjure.ConjureTemplateTest" name="templateReferencesCanBeAtTheEndOfTemplates"/>
+  <testcase time="0" classname="io.d8a.conjure.ConjureTemplateTest" name="templateReferencesCanBeTheWholeTemplate"/>
+  <testcase time="0" classname="io.d8a.conjure.ConjureTemplateTest" name="templateRefsCanBeLongHand"/>
+  <testcase time="0" classname="io.d8a.conjure.DateNodeTypeTest" name="allowsDateJitter"/>
+  <testcase time="0.042" classname="io.d8a.conjure.DateNodeTypeTest" name="allowsFormat"/>
+  <testcase time="0" classname="io.d8a.conjure.DateNodeTypeTest" name="allowsNegativeHighJitter"/>
+  <testcase time="0" classname="io.d8a.conjure.DateNodeTypeTest" name="allowsNegativeLowJitter"/>
+  <testcase time="0" classname="io.d8a.conjure.DateNodeTypeTest" name="allowsTimezone"/>
+  <testcase time="0.001" classname="io.d8a.conjure.DateNodeTypeTest" name="canHaveSameJitterLowAndHigh"/>
+  <testcase time="0.001" classname="io.d8a.conjure.DateNodeTypeTest" name="canReferenceMinMaxForJitter"/>
+  <testcase time="0" classname="io.d8a.conjure.DateNodeTypeTest" name="fixesTransposedLowHigh"/>
+  <testcase time="0" classname="io.d8a.conjure.DateNodeTypeTest" name="generatesSystemTimestamp"/>
+  <testcase time="0" classname="io.d8a.conjure.DateNodeTypeTest" name="usesClockFromSampleGenerator"/>
+  <testcase time="0" classname="io.d8a.conjure.MinMaxNodeTypeTest" name="allowsNegativeForMax"/>
+  <testcase time="0.001" classname="io.d8a.conjure.MinMaxNodeTypeTest" name="allowsNegativeForMin"/>
+  <testcase time="0" classname="io.d8a.conjure.MinMaxNodeTypeTest" name="canBeCreatedFromFactoryMethod"/>
+  <testcase time="0" classname="io.d8a.conjure.MinMaxNodeTypeTest" name="canHaveSameMinAndMax"/>
+  <testcase time="0" classname="io.d8a.conjure.MinMaxNodeTypeTest" name="createFailsMaxNotSpecified"/>
+  <testcase time="0" classname="io.d8a.conjure.MinMaxNodeTypeTest" name="createFailsMinNotSpecified"/>
+  <testcase time="0" classname="io.d8a.conjure.MinMaxNodeTypeTest" name="fixesTransposedMinMax"/>
+  <testcase time="0.004" classname="io.d8a.conjure.MinMaxNodeTypeTest" name="generatesAllValuesInRangeInclusive"/>
+  <testcase time="0" classname="io.d8a.conjure.MinMaxNodeTypeTest" name="generatesNumberBetweenMinMax"/>
+  <testcase time="0.001" classname="io.d8a.conjure.MinMaxNodeTypeTest" name="templatesFailWhenAddedWithoutMax"/>
+  <testcase time="0" classname="io.d8a.conjure.MinMaxNodeTypeTest" name="templatesFailWhenAddedWithoutMin"/>
+</testsuite>
