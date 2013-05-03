@@ -1,3 +1,3 @@
 [submodule "harness"]
 	path = harness
-	url = git://github.com/housejester/druid-test-harness.git
+	url = https://github.com/jwang93/test-druid.git
