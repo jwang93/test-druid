@@ -1,7 +1,7 @@
 {
     "queryType": "groupBy",
     "dataSource": "appevents3",
-    "granularity": "minute", 
+    "granularity": "all", 
     "dimensions": ["appid", "event", "country"],
     "aggregations":[
         {"type":"count", "name":"eventcount"},

@@ -21,5 +21,4 @@ This is a compilation of my study of Metamarkets' Druid (a real-time analytics d
 ##### Contact Info
 
 Please feel free to contact me if you have any questions or would like to continue with this project.    
-**Mobile:** (408) 693-4876   
 **Email:** jay.wang.93@gmail.com    
