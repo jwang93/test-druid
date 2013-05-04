@@ -1,10 +1,28 @@
-Exception in thread "main" java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
-	at org.apache.zookeeper.server.quorum.QuorumPeerMain.<clinit>(QuorumPeerMain.java:64)
-Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory
-	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
-	... 1 more
+2013-05-03 20:19:09,806 [myid:] - INFO  [main:QuorumPeerConfig@101] - Reading configuration from: /Users/jaywang/Desktop/test-druid/zookeeper/bin/../conf/zoo.cfg
+2013-05-03 20:19:09,873 [myid:] - INFO  [main:DatadirCleanupManager@78] - autopurge.snapRetainCount set to 3
+2013-05-03 20:19:09,874 [myid:] - INFO  [main:DatadirCleanupManager@79] - autopurge.purgeInterval set to 0
+2013-05-03 20:19:09,875 [myid:] - INFO  [main:DatadirCleanupManager@101] - Purge task is not scheduled.
+2013-05-03 20:19:09,875 [myid:] - WARN  [main:QuorumPeerMain@113] - Either no config or no quorum defined in config, running  in standalone mode
+2013-05-03 20:19:09,921 [myid:] - INFO  [main:QuorumPeerConfig@101] - Reading configuration from: /Users/jaywang/Desktop/test-druid/zookeeper/bin/../conf/zoo.cfg
+2013-05-03 20:19:09,921 [myid:] - INFO  [main:ZooKeeperServerMain@95] - Starting server
+2013-05-03 20:19:09,954 [myid:] - INFO  [main:Environment@100] - Server environment:zookeeper.version=3.4.5-1392090, built on 09/30/2012 17:52 GMT
+2013-05-03 20:19:09,955 [myid:] - INFO  [main:Environment@100] - Server environment:host.name=wl-10-190-54-93.wireless.duke.edu
+2013-05-03 20:19:09,955 [myid:] - INFO  [main:Environment@100] - Server environment:java.version=1.6.0_43
+2013-05-03 20:19:09,956 [myid:] - INFO  [main:Environment@100] - Server environment:java.vendor=Apple Inc.
+2013-05-03 20:19:09,956 [myid:] - INFO  [main:Environment@100] - Server environment:java.home=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+2013-05-03 20:19:09,957 [myid:] - INFO  [main:Environment@100] - Server environment:java.class.path=/Users/jaywang/Desktop/test-druid/zookeeper/bin/../build/classes:/Users/jaywang/Desktop/test-druid/zookeeper/bin/../build/lib/*.jar:/Users/jaywang/Desktop/test-druid/zookeeper/bin/../lib/slf4j-log4j12-1.6.1.jar:/Users/jaywang/Desktop/test-druid/zookeeper/bin/../lib/slf4j-api-1.6.1.jar:/Users/jaywang/Desktop/test-druid/zookeeper/bin/../lib/netty-3.2.2.Final.jar:/Users/jaywang/Desktop/test-druid/zookeeper/bin/../lib/log4j-1.2.15.jar:/Users/jaywang/Desktop/test-druid/zookeeper/bin/../lib/jline-0.9.94.jar:/Users/jaywang/Desktop/test-druid/zookeeper/bin/../zookeeper-3.4.5.jar:/Users/jaywang/Desktop/test-druid/zookeeper/bin/../src/java/lib/*.jar:/Users/jaywang/Desktop/test-druid/zookeeper/bin/../conf:
+2013-05-03 20:19:09,957 [myid:] - INFO  [main:Environment@100] - Server environment:java.library.path=.:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+2013-05-03 20:19:09,958 [myid:] - INFO  [main:Environment@100] - Server environment:java.io.tmpdir=/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/
+2013-05-03 20:19:09,958 [myid:] - INFO  [main:Environment@100] - Server environment:java.compiler=<NA>
+2013-05-03 20:19:09,959 [myid:] - INFO  [main:Environment@100] - Server environment:os.name=Mac OS X
+2013-05-03 20:19:09,959 [myid:] - INFO  [main:Environment@100] - Server environment:os.arch=x86_64
+2013-05-03 20:19:09,959 [myid:] - INFO  [main:Environment@100] - Server environment:os.version=10.7.5
+2013-05-03 20:19:09,960 [myid:] - INFO  [main:Environment@100] - Server environment:user.name=root
+2013-05-03 20:19:09,960 [myid:] - INFO  [main:Environment@100] - Server environment:user.home=/Users/jaywang
+2013-05-03 20:19:09,961 [myid:] - INFO  [main:Environment@100] - Server environment:user.dir=/Users/jaywang/Desktop/test-druid/zookeeper
+2013-05-03 20:19:09,970 [myid:] - INFO  [main:ZooKeeperServer@726] - tickTime set to 2000
+2013-05-03 20:19:09,971 [myid:] - INFO  [main:ZooKeeperServer@735] - minSessionTimeout set to -1
+2013-05-03 20:19:09,971 [myid:] - INFO  [main:ZooKeeperServer@744] - maxSessionTimeout set to -1
+2013-05-03 20:19:10,066 [myid:] - INFO  [main:NIOServerCnxnFactory@94] - binding to port 0.0.0.0/0.0.0.0:2181
+2013-05-03 20:19:10,490 [myid:] - INFO  [main:FileSnap@83] - Reading snapshot /var/zookeeper/version-2/snapshot.5d1
+2013-05-03 20:19:10,619 [myid:] - INFO  [main:FileTxnSnapLog@240] - Snapshotting: 0x5d8 to /var/zookeeper/version-2/snapshot.5d8

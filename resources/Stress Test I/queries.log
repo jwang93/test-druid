@@ -1,0 +1,77 @@
+sleep for 1 seconds...
+ 
+[ {
+  "version" : "v1",
+  "timestamp" : "-292275055-05-16T16:47:04.192Z",
+  "event" : {
+    "id" : "306771719312506881",
+    "id_str" : "306771719312506881",
+    "text" : "Status: Begging that he always be like this. For me, just for me. \uD83D\uDE4F http://t.co/inTqXntQch",
+    "eventcount" : 37,
+    "eventssum" : 178708.0
+  }
+}, {
+  "version" : "v1",
+  "timestamp" : "-292275055-05-16T16:47:04.192Z",
+  "event" : {
+    "id" : "306771719996186625",
+    "id_str" : "306771719996186625",
+    "text" : "@Joeypearce we've got another bellend coming to see the car I'm having too help clean :-/ I'll see you when work ends ! X",
+    "eventcount" : 38,
+    "eventssum" : 178709.0
+  }
+}, {
+  "version" : "v1",
+  "timestamp" : "-292275055-05-16T16:47:04.192Z",
+  "event" : {
+    "id" : "306771720080064512",
+    "id_str" : "306771720080064512",
+    "text" : "Broomfield passes ban on marijuana businesses: The Broomfield City Council has voted to temporarily ban... http://t.co/VqgmuHVGW8",
+    "eventcount" : 37,
+    "eventssum" : 178709.0
+  }
+}, {
+  "version" : "v1",
+  "timestamp" : "-292275055-05-16T16:47:04.192Z",
+  "event" : {
+    "id" : "306771720193339393",
+    "id_str" : "306771720193339393",
+    "text" : "Geeee",
+    "eventcount" : 37,
+    "eventssum" : 178709.0
+  }
+}, {
+  "version" : "v1",
+  "timestamp" : "-292275055-05-16T16:47:04.192Z",
+  "event" : {
+    "id" : "306771720226881536",
+    "id_str" : "306771720226881536",
+    "text" : "Mon CPE veut que je monte sur scene au spectacle de mon collège avec ma gratte j'hésite :p",
+    "eventcount" : 34,
+    "eventssum" : 178708.0
+  }
+}, {
+  "version" : "v1",
+  "timestamp" : "-292275055-05-16T16:47:04.192Z",
+  "event" : {
+    "id" : "306771720231084032",
+    "id_str" : "306771720231084032",
+    "text" : "@Maiacalvente96 sisi.... jijiijij",
+    "eventcount" : 35,
+    "eventssum" : 178708.0
+  }
+}, {
+  "version" : "v1",
+  "timestamp" : "-292275055-05-16T16:47:04.192Z",
+  "event" : {
+    "id" : "306771720247853057",
+    "id_str" : "306771720247853057",
+    "text" : "@cabiedas @Cuckisalam @MarinaBlancas jajajajajajajajjajajaja dios le han discriminado.. quiero.mi mural D:",
+    "eventcount" : 32,
+    "eventssum" : 178708.0
+  }
+} ]
+real	0m13.941s
+user	0m0.006s
+sys	0m0.004s
+bin/run_client.sh finished
